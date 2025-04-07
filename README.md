@@ -8,14 +8,15 @@ Alexander Torres Avila
 Ingeniería Biomédica, Departamento de Ingeniería Eléctrica y Electrónica, Tecnológico Nacional de México/IT Tijuana. Blvd. Alberto Limón Padilla s/n, Tijuana, C.P. 22454, B.C., México. Email: l21212848@tectijuana.edu.mx
 
 ## Resumen de la práctica
-En esta práctica se analizarán los modelos de crecimiento sigmoidal, una clase de ecuaciones diferenciales ordinarias de primer orden que describen procesos biológicos con una tasa de crecimiento inicial rápida que se desacelera al acercarse a una capacidad de carga. Se estudiarán tres modelos representativos: el crecimiento logístico, el crecimiento alométrico y el crecimiento de Gompertz. A través de simulaciones numéricas implementadas con los métodos de Euler y Heun, se obtendrán soluciones aproximadas que permitirán comparar la dinámica temporal y cualitativa de cada ley. Se abordarán conceptos como punto de inflexión, velocidad máxima de crecimiento y equilibrio poblacional. Esta práctica proporciona una introducción fundamental al análisis de fenómenos autorregulados en sistemas biológicos, destacando el papel de las ecuaciones no lineales en la descripción de comportamientos complejos como el crecimiento celular, tumoral o de poblaciones.
+En esta práctica se desarrollará un modelo mecanicista basado en ecuaciones diferenciales ordinarias (EDOs) de primer orden para describir la dinámica entre dos variables biológicas, cuya evolución está influenciada por una ley de crecimiento sigmoidal y la interacción entre ambas variables. Se asumirá una capacidad de carga máxima, y se implementará la ley de acción de masas para capturar la dependencia mutua entre las variables. A partir de un conjunto de datos experimentales (tiempo, 𝑥(𝑡), 𝑦(𝑡)), se ajustarán los parámetros del modelo mediante algoritmos de regresión no lineal. Posteriormente, se evaluará la estabilidad del sistema, la positividad de las soluciones, y se validará el ajuste mediante herramientas estadísticas. Finalmente, se realizará una visualización gráfica de la interacción biológica usando una representación esquemática.
 
 ## Objetivos específicos
-1. Formular ecuaciones diferenciales de primer orden para representar los modelos de crecimiento sigmoidal: logístico, alométrico y de Gompertz.
-2. Implementar los métodos numéricos de Euler y Heun para obtener soluciones aproximadas de los modelos en un intervalo de tiempo definido.
-3. Comparar gráficamente las soluciones de los diferentes modelos en el dominio temporal, identificando sus puntos de inflexión y comportamiento asintótico.
-4. Analizar el impacto de los parámetros de crecimiento y capacidad de carga sobre la dinámica del sistema en cada modelo.
-5. Comprender el uso de modelos sigmoidales en contextos reales de la biología y la medicina, como el crecimiento tumoral o la proliferación celular.
+1. Formular un sistema de EDOs de primer orden que describa la dinámica conjunta de dos variables biológicas usando funciones sigmoidales y la ley de acción de masas.
+2. Estimar los parámetros del modelo mediante algoritmos de regresión no lineal en Python y/o MATLAB.
+3. Evaluar estadísticamente los parámetros ajustados mediante errores estándar, pruebas de significancia y coeficiente de determinación 𝑅^2.
+4. Determinar la existencia de puntos de equilibrio y analizar su estabilidad local mediante herramientas matemáticas.
+5. Representar visualmente la interacción entre variables mediante un diagrama esquemático
+6. Realizar simulaciones numéricas in silico que ilustren el ajuste del modelo y la dinámica en el tiempo.
 
 ## Docente
 Dr. Paul A. Valle
